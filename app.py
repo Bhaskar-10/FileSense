@@ -9,8 +9,6 @@ from collections import Counter
 from py3langid.langid import LanguageIdentifier, MODEL_FILE
 import os
 
-# Your existing functions here (detect_file_type, extract_text, detect_language_with_langid, clean_text, detect_languages)
-# ... (copy all the functions from your original script)
 import magic
 import filetype
 import PyPDF2
@@ -64,8 +62,7 @@ def detect_language_with_langid(line):
     return lang, prob
 
 def clean_text(text):
-    # Here you can clean the extracted text if necessary (e.g., remove headers/footers, unwanted characters, etc.)
-    # For now, just return text as is (you can improve this based on your specific needs)
+   
     return text.strip()
 
 def detect_languages(text):
