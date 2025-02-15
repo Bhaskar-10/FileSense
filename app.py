@@ -73,7 +73,7 @@ def detect_languages(text):
         if line:  # Skip empty lines
             lang, prob = detect_language_with_langid(line)
             # You can apply a threshold on probability to filter out less confident predictions
-            if prob > 0.5:  # Example: filter out languages with less than 50% confidence
+            if prob > 0.8:  # Example: filter out languages with less than 50% confidence
                 detected_languages.add(lang)
     return list(detected_languages)  # Return list of detected languages
 
